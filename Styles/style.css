@@ -14,6 +14,7 @@
     --dark-01: #131313;
     --dark-02: #424242;
     --dark-03: #727272;
+    --dark-04: #cecece;
 }
 
 * {
@@ -23,28 +24,32 @@
     font-family: 'Work sans', sans-serif;
 
 }
-.hide{
+
+.hide {
     display: none;
 }
+
 body {
     height: 100vh;
     width: 100%;
     margin: 0 auto;
-    
+
 
 }
+
 header {
     height: 130%;
     width: 100%;
     margin: 0 auto;
-    background-color: var(--banner-bg); 
+    background-color: var(--banner-bg);
 }
 
-main{
+main {
     height: 100%;
     width: 80%;
     margin: 0 auto;
 }
+
 /* -----------------------------------------
 ---------------- Navigation --------------
 ------------------------------------------  */
@@ -81,127 +86,149 @@ nav ul li a {
 ---------------- Banner style--------------
 ------------------------------------------  */
 
-.banner{
+.banner {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.banner .banner-info{
+
+.banner .banner-info {
     text-align: center;
 }
-.banner-info .banner-title{
+
+.banner-info .banner-title {
     font-weight: 700;
-font-size: 3em;
-color: var(--dark-01);
+    font-size: 3em;
+    color: var(--dark-01);
 }
-.banner-info .banner-description{
+
+.banner-info .banner-description {
     font-weight: 400;
-font-size: .7em;
-margin: 15px 15% ;
-color: var(--dark-03);
+    font-size: .7em;
+    margin: 15px 15%;
+    color: var(--dark-03);
 }
-.explore-btn, .primary-button{
+
+.explore-btn,
+.primary-button {
     padding: 15px 20px;
     font-weight: 600;
-font-size: 15px;
-color: #fff;
-border: 0;
-border-radius: 10px;
-background-color: var(--btn-color);
-margin: 20px 0;
-transition: background-color .3s;
+    font-size: 15px;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--btn-color);
+    margin: 20px 0;
+    transition: background-color .3s;
 }
-.explore-btn:hover, .primary-button:hover{
+
+.explore-btn:hover,
+.primary-button:hover {
     background-color: transparent;
     outline: 1px solid var(--btn-color);
     color: var(--btn-color);
-    
+
 }
+
 .banner .banner-img {
     height: 100%;
     width: 80%;
     margin: 20px auto;
 }
-.banner .banner-img img{
+
+.banner .banner-img img {
     height: 100%;
     width: 100%;
 }
+
 /* -----------------------------------------
 ---------------- Feature list style--------------
 ------------------------------------------  */
 
-.feature-list{
-    
+.feature-list {
+
     margin: 100px 0;
     display: flex;
     gap: 73px;
     align-items: center;
 }
-.feature-album{
+
+.feature-album {
     margin-left: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
-.feature-album img{
+
+.feature-album img {
     height: 150px;
 }
-.feature-list .feature-list-info{
+
+.feature-list .feature-list-info {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.feature-list-info .section-title{
+
+.feature-list-info .section-title {
     font-weight: 500;
-font-size: 2em;
-color: var(--dark-03);
+    font-size: 2em;
+    color: var(--dark-03);
 }
-.feature-list-info .section-title span{
+
+.feature-list-info .section-title span {
     color: var(--btn-color);
     font-weight: 700;
 }
-.feature-list-info .section-description{
+
+.feature-list-info .section-description {
     font-size: 15px;
     color: var(--dark-03);
 }
-.feature-list-info .explore-btn{
+
+.feature-list-info .explore-btn {
     width: 50%;
 }
+
 /* -----------------------------------------
------- features you will love Section--------
+------ features you will love Section Style --------
 ------------------------------------------  */
 
-.best-features{
+.best-features {
     display: flex;
     flex-direction: column;
     gap: 30px;
-     background-image: url('../images/architect.png');
-     background-size: 50% 80%;
-     background-repeat: no-repeat;
-     background-position: right top;
+    background-image: url('../images/architect.png');
+    background-size: 50% 80%;
+    background-repeat: no-repeat;
+    background-position: right top;
 }
-.best-features .section-title{
+
+.best-features .section-title {
     font-weight: 700;
-font-size: 2em;
-color: var(--dark-01);
-width: 45%;
-padding-left: 10px;
-border-left: 5px solid var(--btn-color);
+    font-size: 2em;
+    color: var(--dark-01);
+    width: 45%;
+    padding-left: 10px;
+    border-left: 5px solid var(--btn-color);
 }
-.best-features .section-description{
+
+.best-features .section-description {
     font-size: 14px;
     color: var(--dark-03);
     width: 45%;
 }
-.best-features .feature-table{
+
+.best-features .feature-table {
     display: flex;
     flex-direction: column;
     width: 45%;
     gap: 20px;
-   
+
 
 }
-.best-features .feature-table .feature{
+
+.best-features .feature-table .feature {
     padding: 10px;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
@@ -209,17 +236,20 @@ border-left: 5px solid var(--btn-color);
 
 
 }
-.feature-table .feature .feature-title{
+
+.feature-table .feature .feature-title {
     font-weight: 600;
-font-size: 17px;
-color: var(--dark-01);
-margin: 10px 5px;
+    font-size: 17px;
+    color: var(--dark-01);
+    margin: 10px 5px;
 }
+
 .feature .feature-subtitle {
     font-size: 15px;
     color: var(--dark-03);
 }
-.best-features .experience{
+
+.best-features .experience {
     height: 130px;
     width: 160px;
     display: flex;
@@ -236,33 +266,38 @@ margin: 10px 5px;
 
 
 }
-.experience h1{
+
+.experience h1 {
     font-size: 2em;
     font-weight: 700;
 }
+
 /* -----------------------------------------
 ---------------- Some facts styles--------------
 ------------------------------------------  */
 
-.facts .fact-title{
+.facts .fact-title {
     font-weight: 700;
-font-size: 2em;
-color: var(--dark-01);
+    font-size: 2em;
+    color: var(--dark-01);
 
 }
-.facts .fact-description{
+
+.facts .fact-description {
     font-weight: 400;
-font-size: 15px;
-color: var(--dark-03);
-width: 45%;
-margin: 20px 0;
+    font-size: 15px;
+    color: var(--dark-03);
+    width: 45%;
+    margin: 20px 0;
 }
-.facts .fact-container{
+
+.facts .fact-container {
     display: flex;
     gap: 25px;
     justify-content: space-between;
 }
-.fact-container .fact{
+
+.fact-container .fact {
     height: 200px;
     display: flex;
     flex: 1;
@@ -271,95 +306,112 @@ margin: 20px 0;
     align-items: center;
     gap: 15px;
     border: 1px solid var(--btn-color);
-border-radius: 8px;
+    border-radius: 8px;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     padding: 15px;
     transition: box-shadow .3s, background-color .3s;
 
 }
-.fact:hover{
+
+.fact:hover {
     background-color: #6dff6d88;
     box-shadow: 0px 4px 30px #e1900e88;
 }
-.fact:hover img{
+
+.fact:hover img {
     display: none;
 }
-.fact:hover h1{
+
+.fact:hover h1 {
     font-size: 3em;
 }
-.fact-container .fact img{
+
+.fact-container .fact img {
     height: 50px;
     width: 50px;
-   
+
 }
-.fact h1{
+
+.fact h1 {
     color: var(--dark-01);
     transition: font-size .3s;
 }
-.fact p{
+
+.fact p {
     font-size: 15px;
     color: var(--dark-03);
 }
+
 /* -----------------------------------------
 ---------------- Sponsor style--------------
 ------------------------------------------  */
-.sponsors .section-title{
+.sponsors .section-title {
     text-align: center;
     font-size: 2em;
     color: var(--dark-01);
     margin: 30px 0;
 
 }
-.sponsors .section-description{
+
+.sponsors .section-description {
     font-size: 15px;
     color: var(--dark-03);
     text-align: center;
     margin: 10px auto;
 }
-.sponsor-container{
+
+.sponsor-container {
     display: flex;
     align-items: center;
     gap: 30px;
 
 }
-.sponsor-container .sponsor{
-   margin: 30px 0;
+
+.sponsor-container .sponsor {
+    margin: 30px 0;
 }
-.sponsor-container .sponsor img{
+
+.sponsor-container .sponsor img {
     width: 130px;
     height: 50px;
     filter: grayscale(100%);
-    -webkit-filter: grayscale(100%); 
+    -webkit-filter: grayscale(100%);
 }
-/* -----------------------------------------
----------------- Copyright section Style--------------
-------------------------------------------  */
 
-.copyright{
-    height: 10vh;
-    background-color: var(--banner-bg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--dark-03);
-    font-size: 15px;
-    margin-top: 50px;
-    
-}
 
 
 /* -----------------------------------------
 ---------------- Login form Style--------------
 ------------------------------------------  */
 
-footer {
+.connection-form {
     height: 75vh;
     width: 100%;
     margin-top: 50px;
     display: flex;
-    gap: 117px;
-    padding: 30px 100px 15px;
+    gap: 50px;
+    padding: 40px 20px;
     background-color: var(--banner-bg);
+}
+
+.connect {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.connect-title {
+    font-size: 2em;
+    color: var(--dark-01);
+}
+
+.connect-description {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--dark-03);
+
+    margin: 20px 0;
 }
 
 .connect a {
@@ -372,107 +424,223 @@ footer {
     width: 24px;
 }
 
-.connect-title {
-    font-weight: 700;
-    font-size: 1.5em;
-    text-align: left;
-    color: var(--dark-01);
+.connection-form .form,
+.connection-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
 }
 
-.connect-desc {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-    color: var(--dark-03);
-    margin: 30px 0;
-}
-
-.form form input[type=text], input[type=email], textarea{
-    width: 100%;
-    padding: 24px  ;
-    margin: 20px 0;
+form input,
+textarea {
+    border-radius: 10px 0;
+    padding: 20px;
+    outline: 0;
     border: 0;
-    outline: none;
     resize: none;
 
 }
-.form form input[type=text], input[type=email]{
-    height: 30px;
+
+/* -----------------------------------------
+---------- Copyright section Style----------
+------------------------------------------  */
+
+.copyright {
+    height: 10vh;
+    background-color: var(--banner-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-03);
+    font-size: 15px;
+    margin-top: 50px;
+
 }
+
 /* -----------------------------------------
 --------- Responsive for mobile--------------
 ------------------------------------------  */
-@media (577px > width) {
-    .hide{
+@media (290px < width < 577px) {
+    .hide {
         display: block;
     }
-    header{
-        height: 80vh;
+
+    /* -----------------------------------------
+---------------- Navigation --------------
+------------------------------------------  */
+
+    header {
+        height: 80%;
     }
-    header nav .logo{
-        margin-top: 50px;
+
+    header nav .logo {
+        margin: 60px 0 10px;
     }
-    header nav, nav ul{
+
+    header nav,
+    nav ul {
         justify-content: center;
         flex-direction: column;
+        gap: 0;
+    }
+
+    nav ul,
+    nav ul li {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul li:nth-child(2n+1) {
+        background-color: var(--dark-04);
+    }
+
+    nav ul li:nth-child(2n) {
+        background-color: var(--dark-03);
+
+    }
+
+    nav ul li a {
+        font-size: 10px;
+        color: #fff;
+    }
+
+    /* -----------------------------------------
+---------------- Banner style--------------
+------------------------------------------  */
+    .banner {
         gap: 10px;
     }
-    .banner .banner-img, .banner .banner-info {
-        margin-top: 100px;
+
+    .banner .banner-info .banner-title {
+        font-size: 1.2em;
+        margin-top: 10px;
     }
-    .feature-list{
+
+    .banner .banner-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .banner-info .banner-description {
+        margin: 5px 15%;
+    }
+
+    .explore-btn {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .banner .banner-info {
+        margin-top: 50px;
+
+    }
+
+    .banner .banner-img {
+        margin-top: 5px;
+    }
+
+    /* -----------------------------------------
+---------------- Feature list style--------------
+------------------------------------------  */
+
+    .feature-list {
         flex-direction: column;
     }
-    .feature-album{
+
+    .feature-album {
         grid-template-columns: 1fr;
+        margin-left: 0;
     }
-    .feature-album img{
-        width: 300px;
-        height: 300px;
+
+    .feature-album img {
+        width: 280px;
+        height: 280px;
     }
-    
-.feature-list .feature-list-info{
-    align-items: center;
-    text-align: center;
-}
-.best-features{
-    background-image: none;
 
-}
-.best-features .section-title, .best-features .section-description, .best-features .feature-table{
-    width: 100%;
-}
-.best-features .experience{
-    top: -100px;
-    left: 0;
-}
+    .feature-list .feature-list-info {
+        align-items: center;
+        text-align: center;
+    }
 
-.facts{
-    text-align: center;
-}
-.facts .fact-description{
-    width: auto;
-}
-.facts .fact-container{
-    flex-direction: column;
-}
-.sponsor-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-.sponsor-container .sponsor img{
-    width: 60px;
-    height: 50px;
-}
-.copyright{
-    text-align: center;
-}
-footer{
-    flex-direction: column;
-    padding: 35px 25px;
-    height: 75vh;
-    gap: 85px;
+    /* ------------------------------------------------
+------ features you will love Section Style --------
+------------------------------------------ ------- */
+    .best-features {
+        background-image: none;
 
-}
+    }
+
+    .best-features .section-title,
+    .best-features .section-description,
+    .best-features .feature-table {
+        width: 100%;
+    }
+
+    .best-features .experience {
+        top: -100px;
+        left: 0;
+    }
+
+    /* -----------------------------------------
+---------------- Some facts styles--------------
+------------------------------------------  */
+    .facts {
+        text-align: center;
+    }
+
+    .facts .fact-description {
+        width: auto;
+    }
+
+    .facts .fact-container {
+        flex-direction: column;
+    }
+
+    /* -----------------------------------------
+---------------- Sponsor style--------------
+------------------------------------------  */
+    .sponsor-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sponsor-container .sponsor img {
+        width: 60px;
+        height: 50px;
+    }
+
+
+    /* -----------------------------------------
+---------------- Login form Style--------------
+------------------------------------------  */
+    .connection-form {
+        height: 125vh;
+        flex-direction: column;
+        padding: 35px 25px;
+        gap: 5px;
+        font-size: 13px;
+
+    }
+
+    .connect-description {
+        margin: 0;
+    }
+
+    .connection-form .form,
+    .connection-form form {
+        gap: 10px;
+    }
+
+    /* -----------------------------------------
+---------- Copyright section Style----------
+------------------------------------------  */
+    .copyright {
+        text-align: center;
+        font-size: 12px;
+    }
 }
